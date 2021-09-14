@@ -107,10 +107,11 @@ p {
     width: 100vw;
     top: 73px;
     height: 100vh;
-    z-index: 9999;
+    z-index: -100;
     background-color: #08397D;
     border-top: 1px solid white;
     background-image: linear-gradient(315deg, #4062bb 0%, #08397D 74%);
+    animation: openMenu 1s
 }
 
 .mobile-tab, .mobile-tab-dropdown { 
@@ -131,13 +132,14 @@ p {
 .mobile-other-dropdown { 
     background-color: #e7eaf3;
     text-transform: uppercase;
+    height: auto;
 }
 
 .mobile-tab-white  {
     height: 35px;
     padding-top: 15px;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
-    font-size: 14px;;
+    font-size: 14px;
 }
 
 .mobile-other-dropdown a { 
@@ -150,7 +152,7 @@ p {
 
 .Nav { 
     position: fixed;
-    z-index:300;
+    z-index:900;
     width:100vw;
     height: 71px;
     background:#08397D;
@@ -190,14 +192,13 @@ li > a {
     text-transform: uppercase;
     text-decoration: none;
     font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
-    font-size: 12px;
-    text-shadow: 0 10px 15px rgba(0,0,0,0.5);
-    color: rgba(255, 255, 255, 0.95);   
+    text-shadow: 0 10px 15px rgba(0,0,0,0.5); 
 }
 
 li div { 
     color: rgba(255, 255, 255, 0.95);  
     cursor: pointer;
+    font-size: 15px;
 }
 
 .dropdown-content {
@@ -211,7 +212,7 @@ li div {
 
   .dropdown-bracket { 
       background-color: none;
-      height: 27px;
+      height: 28px;
       width: 100%;
   }
 
@@ -235,8 +236,6 @@ li div {
     background-color: #ddd;
     color: #08397D;
   }
-
-
 
 .background { 
     z-index: -1;
@@ -658,11 +657,26 @@ textarea:not(:focus):valid ~ .form-label-textarea {
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset; }
 
 .active { 
-    color: lightblue
+    color: rgb(152, 223, 246)
 }
 
-.active  { 
-    color: lightblue
+.close-ani { 
+    animation: closeMenu 1s;
+}
+
+@keyframes openMenu { 
+    0% { 
+        transform: translateX(100vw)
+    }
+}
+
+@keyframes closeMenu { 
+    0% { 
+        
+    }
+    100% { 
+        transform: translateX(100vw)
+    }
 }
 
 @media (max-width: 1200px){ 
