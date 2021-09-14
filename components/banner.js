@@ -43,10 +43,9 @@ export default function Banner() {
          <div>
          <Swiper
              modules={[Autoplay, Navigation]}
-             autoplay={{ delay: 6000 }}
+             autoplay={{ delay: 4000 }}
              slidesPerView={1}
              navigation
-             
              >
              {slides.map(item => {
                  return <SwiperSlide key={item.name}>
@@ -58,7 +57,6 @@ export default function Banner() {
                  }
              )}
          </Swiper>
-         
          </div>
      )
 }

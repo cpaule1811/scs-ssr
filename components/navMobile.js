@@ -20,7 +20,7 @@ useEffect(() => {
   }, [setMenuStatus, router])
 
     return <div className="mobile-menu">
-    <Link href="/" passHref><div className={`mobile-tab ${isActive('/')}`}>home</div></Link>
+    <Link href="/" passHref><div className={`mobile-tab ${isActive(router.pathname, '/')}`}>home</div></Link>
     <Link href="/about" passHref ><div className="mobile-tab">What we do</div></Link>
      <div onClick={() => setDropDown({services: !dropDown.services, partners: false})} id="services-dropdown" className="mobile-tab-dropdown">services <i className="fas fa-caret-down"></i></div>
         { dropDown.services &&

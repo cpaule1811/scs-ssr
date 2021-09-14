@@ -26,10 +26,8 @@ export default function ContactForm () {
               <input type="text" id="email" className="form-control" required />
               <label className="form-label" htmlFor="email">Email address</label>
             </div>
-               <select id="services" className="form-control" required> 
-                 <option value="none" selected disabled hidden>
-                   Select an service
-                 </option>
+               <select id="services" className="form-control" required defaultValue={"none"}> 
+                 <option value="none">Select an service</option>
                  <option value="Structured Finance Strategies">Structured Finance Strategies</option>
                  <option value="Bankruptcy & Distress Advisory">Bankruptcy & Distress Advisory</option>
                  <option value="Intellectual Property Financing">Intellectual Property Financing</option>

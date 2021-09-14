@@ -101,11 +101,6 @@ p {
     box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.3);
 }
 
-.menu-button i { 
-    color: rgba(255, 255, 255, 0.95);
-    font-size: 30px;
-}
-
 .mobile-menu { 
     display: none;
     position: absolute;
@@ -193,10 +188,16 @@ p {
 
 li > a { 
     text-transform: uppercase;
+    text-decoration: none;
     font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
     font-size: 12px;
     text-shadow: 0 10px 15px rgba(0,0,0,0.5);
     color: rgba(255, 255, 255, 0.95);   
+}
+
+li div { 
+    color: rgba(255, 255, 255, 0.95);  
+    cursor: pointer;
 }
 
 .dropdown-content {
@@ -652,12 +653,17 @@ textarea:not(:focus):valid ~ .form-label-textarea {
     left: 7px;
   }
   
-  .active { 
-    color:  rgb(84, 155, 226);
-}
+
 
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset; }
 
+.active { 
+    color: lightblue
+}
+
+.active  { 
+    color: lightblue
+}
 
 @media (max-width: 1200px){ 
     .Nav { 
@@ -680,7 +686,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { box
 
 @media screen and (max-width: 850px){ 
     .banner{
-        height:200px;
+        height:300px;
     }
 
     .nav-wrapper { 
@@ -708,7 +714,6 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { box
     .bottom-right-positioning, .top-right-positioning, .top-left-positioning{
         font-size: 12px;
     }
-    
 }
 
 @media screen and (max-width: 325px) {
@@ -730,9 +735,6 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { box
     }
     
 }
-
-
-
   
 
 
