@@ -50,7 +50,7 @@ export default function Banner() {
              {slides.map(item => {
                  return <SwiperSlide key={item.name}>
                         <div className="banner">
-                        <Image className="banner-img" src={item.bannerImg} alt={item.alt} /> 
+                        <Image className="banner-img" src={item.bannerImg} alt={item.alt} priority={true} /> 
                         </div>
                         <div className={`${item.captionPos} caption-text`}>{item.caption}</div>
                     </SwiperSlide>
