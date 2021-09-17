@@ -521,7 +521,7 @@ textarea:not(:focus):valid ~ .form-label-textarea {
 .link-button {
     box-sizing: border-box; 
     border-radius: 50%; 
-    padding: 6px;
+    padding: 7px;
     cursor: pointer;
     width: 30px;
     height: 30px;
